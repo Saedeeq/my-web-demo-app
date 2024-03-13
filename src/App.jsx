@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './App.css'
+import { MainApp } from "./styled";
 
 function App() {
   const storageKeyName = "myotherkey"; 
@@ -16,14 +16,14 @@ function App() {
   }, [count]);
 
   return (
-    <div>
-     Hello World!
+    <MainApp>
+     Count Me
 
         <button onClick={() => addNumber((count))}>
           count is {count}
         </button>
 
-    </div>
+    </MainApp>
   )
 }
 
